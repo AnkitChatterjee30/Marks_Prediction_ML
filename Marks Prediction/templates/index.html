@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Machine Learning Model Deployment</title>
+</head>
+<style>
+  form {
+    margin-top: 110px;
+    margin-left: 420px;
+    font-size: 35px;
+  }
+
+  .tyu,.tya,.typ {
+    width: 300px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+  }
+
+  .sub {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 13px;
+  }
+
+  p {
+    margin-top: 100px;
+    margin-left: -100px;
+    color: black;
+    font-size: 35px;
+    position: absolute;
+  }
+
+  .sub:hover {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+  }
+
+  h1 {
+    margin-left: 175px;
+    font-size: 55px;
+    position: absolute;
+    margin-top: -100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      margin-left: 25px;
+      font-size: 30px;
+      position: absolute;
+      margin-top: -100px;
+    }
+
+    form {
+      margin-top: 110px;
+      margin-left: 110px;
+      font-size: 24px;
+    }
+
+    .tyu {
+      width: 270px;
+      height: 40px;
+      margin-left: -100px;
+      margin-top: 140px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
+    .tya {
+      width: 270px;
+      height: 40px;
+      margin-top: 160px;
+      margin-left: -100px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
+    .typ {
+      width: 270px;
+      height: 40px;
+      margin-top: 170px;
+      margin-left: -100px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
+
+    .sub {
+      background-color: black;
+      width: 100px;
+      height: 50px;
+      font-size: 24px;
+      color: white;
+      box-shadow: 5px 5px 5px black;
+      border-radius: 13px;
+    }
+
+    p {
+      margin-top: 100px;
+      margin-left: -100px;
+      color: black;
+      font-size: 24px;
+      position: absolute;
+    }
+    input[type='number']{
+      margin-left:-100px;
+    }
+
+  }
+</style>
+
+<body>
+  <h1>Marks Prediction using Machine Learning</h1>
+  <form action="/submit" method="POST">
+    <p> Your name ?</p>
+    <input type="text" name="naam" placeholder="Your name..." class="tyu" required autocomplete="off">
+    <br>
+    <p>Hours you have studied ?</p>
+    <input type="number" name="hours" placeholder="Hours Studied..." class="tya" required>
+    <br>
+    <p>Courses you have taken ?</p>
+    <input type="number" name="courses" placeholder="Courses Taken..." class="typ" required>
+    <br>
+    <br>
+    <br>
+    <input type="submit" class="sub">
+  </form>
+  <!-- {% if my_marks %}
+  <p style="font-size: 32px; margin-left:320px"> So, your obtained marks are
+    {{ my_marks }}
+  </p>
+  {% endif %} -->
+</body>
+
+</html>
